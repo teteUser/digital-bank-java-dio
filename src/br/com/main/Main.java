@@ -6,7 +6,7 @@ package br.com.main;
  */
 public class Main {
     public static void main(String[] args){
-    ContaCorrente cc1 = new ContaCorrente();
+    Conta cc1 = new ContaCorrente();
     cc1.setAgencia(15);
     cc1.setNumero(1150);
     cc1.depositar(1200);
