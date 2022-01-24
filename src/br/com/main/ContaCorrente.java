@@ -7,8 +7,13 @@ package br.com.main;
 public class ContaCorrente extends Conta{
     private String tipo;
 
-    public ContaCorrente() {
+    
+    
+    public ContaCorrente(int agencia, int numero) {
         this.tipo = "CC";
+        this.setAgencia(agencia);
+        this.setNumero(numero);
+        this.setSaldo(0);
     }
 
     @Override

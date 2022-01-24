@@ -7,8 +7,11 @@ package br.com.main;
 public class ContaPoupanca extends Conta{
     private String tipo;   
 
-    public ContaPoupanca() {
+    public ContaPoupanca(int agencia, int numero) {
         this.tipo = "CP";
+        this.setAgencia(agencia);
+        this.setNumero(numero);
+        this.setSaldo(0);
     }
 
     @Override

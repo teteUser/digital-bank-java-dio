@@ -6,12 +6,11 @@ package br.com.main;
  */
 public class Main {
     public static void main(String[] args){
-    Conta cc1 = new ContaCorrente();
-    cc1.setAgencia(15);
-    cc1.setNumero(1150);
+    Conta cc1 = new ContaCorrente(15, 2022);
+    
+    System.out.println(cc1.toString());
     cc1.depositar(1200);
 
-    System.out.println("Saldo da conta cc1 R$" + cc1.getSaldo());
     System.out.println(cc1.toString());
 
     cc1.sacar(1500);
