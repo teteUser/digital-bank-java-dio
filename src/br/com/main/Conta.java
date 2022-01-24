@@ -5,8 +5,8 @@ package br.com.main;
  *
  * @author teteUser
  */
-public abstract interface Conta {
-    public abstract void sacar();
-    public abstract void depositar();
-    public abstract void transferir();
+public interface Conta {
+    void sacar(double valor);
+    void depositar(double valor);
+    void transferir(double valor, Conta contaDestino);
 }
