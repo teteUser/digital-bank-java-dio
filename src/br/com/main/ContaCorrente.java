@@ -5,10 +5,9 @@ package br.com.main;
  * @author teteUser
  */
 public class ContaCorrente extends Conta{
-    private String tipo;
     
-    public ContaCorrente() {
-        this.tipo = "CC";
+    public ContaCorrente(Cliente cliente, Banco banco) {
+        super(cliente, banco);
     }
 
     @Override

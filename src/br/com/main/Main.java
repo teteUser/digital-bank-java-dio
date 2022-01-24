@@ -6,26 +6,15 @@ package br.com.main;
  */
 public class Main {
     public static void main(String[] args){
-        Conta cc1 = new ContaCorrente();
-        Conta cc2 = new ContaCorrente();
-        Conta cp1 = new ContaPoupanca();
-      
-        cc1.depositar(1200);
-
-        cc1.sacar(1500);
+        Banco santander = new Banco("Santander");
         
-        cc2.depositar(500);
-             
-        cc2.transferir(300, cp1);
+        Cliente tete = new Cliente("Tete");
+        Conta cc1 = new ContaCorrente(tete, santander);
+        
+        Cliente juca = new Cliente("Juca");
+        Conta cc2 = new ContaPoupanca(juca, santander);
+        
+        
        
-        cc1.imprimirExtrato();
-        cc2.imprimirExtrato();
-        cp1.imprimirExtrato();
-        
-        cc1.transferir(300, cp1);
-        
-        cc1.imprimirExtrato();
-        cp1.imprimirExtrato();
-        
     }
 }
