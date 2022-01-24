@@ -6,26 +6,15 @@ package br.com.main;
  */
 public class ContaCorrente extends Conta{
     private String tipo;
-
     
-    
-    public ContaCorrente(int agencia, int numero) {
+    public ContaCorrente() {
         this.tipo = "CC";
-        this.setAgencia(agencia);
-        this.setNumero(numero);
-        this.setSaldo(0);
     }
 
     @Override
-    public String toString() {
-        return "Conta{" + 
-                "Tipo=" + this.tipo +
-                " Agência=" + this.getAgencia() +
-                " Número=" + this.getNumero() + 
-                " Saldo=" + this.getSaldo() +
-                "}\n";
+    public void imprimirExtrato() {
+        System.out.println("===== Extrato Conta Corrente =====");
+        super.imprimirInfosComuns();
     }
 
-
-    
 }

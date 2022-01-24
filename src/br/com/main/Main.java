@@ -6,14 +6,26 @@ package br.com.main;
  */
 public class Main {
     public static void main(String[] args){
-    Conta cc1 = new ContaCorrente(15, 2022);
-    
-    System.out.println(cc1.toString());
-    cc1.depositar(1200);
+        Conta cc1 = new ContaCorrente();
+        Conta cc2 = new ContaCorrente();
+        Conta cp1 = new ContaPoupanca();
+      
+        cc1.depositar(1200);
 
-    System.out.println(cc1.toString());
-
-    cc1.sacar(1500);
+        cc1.sacar(1500);
+        
+        cc2.depositar(500);
+             
+        cc2.transferir(300, cp1);
+       
+        cc1.imprimirExtrato();
+        cc2.imprimirExtrato();
+        cp1.imprimirExtrato();
+        
+        cc1.transferir(300, cp1);
+        
+        cc1.imprimirExtrato();
+        cp1.imprimirExtrato();
         
     }
 }
