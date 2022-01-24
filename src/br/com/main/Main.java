@@ -14,7 +14,8 @@ public class Main {
         Cliente juca = new Cliente("Juca");
         Conta cc2 = new ContaPoupanca(juca, santander);
         
-        
+       cc1.imprimirExtrato();
+       cc2.imprimirExtrato();
        
     }
 }

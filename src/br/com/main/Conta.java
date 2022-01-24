@@ -69,10 +69,11 @@ public abstract class Conta implements InterfaceConta {
     }
     
     protected void imprimirInfosComuns() {
+        System.out.println("Banco: " + this.banco.getNome());
         System.out.println("Titular: " + this.cliente.getNome());
         System.out.println("Agência: " + this.agencia);
         System.out.println("Número: " + this.numero);
-        System.out.printf("Saldo: R$%.2f\n", this.saldo);
+        System.out.printf("Saldo: R$%.2f\n\n", this.saldo);
     }
    
 }
