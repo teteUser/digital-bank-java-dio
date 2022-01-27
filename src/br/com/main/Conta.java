@@ -34,6 +34,7 @@ public abstract class Conta implements InterfaceConta {
     public void transferir(double valor, Conta contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
+        System.out.printf("Você transferiu R$%.2f da sua conta para a conta de %s.\n", valor, contaDestino.cliente.getNome());
     }
 
     public Conta(Cliente cliente, Banco banco) {
