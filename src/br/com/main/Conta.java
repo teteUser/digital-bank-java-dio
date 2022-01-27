@@ -34,7 +34,7 @@ public abstract class Conta implements InterfaceConta {
     public void transferir(double valor, Conta contaDestino) {
         this.setSaldo(this.getSaldo()-valor);
         contaDestino.setSaldo(contaDestino.getSaldo()+valor);
-        System.out.printf("Você transferiu R$%.2f da sua conta para a conta de %s.\nSeu novo saldo é R$%.2f\n", valor, contaDestino.cliente.getNome(), this.getSaldo());
+        System.out.printf("Olá, %s!\nVocê transferiu R$%.2f da sua conta para a conta de %s.\nSeu novo saldo é R$%.2f\n", this.cliente.getNome(), valor, contaDestino.cliente.getNome(), this.getSaldo());
     }
 
     public Conta(Cliente cliente, Banco banco) {
