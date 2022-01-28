@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args){
         Banco santander = new Banco("Santander");
         Banco bradesco = new Banco("Bradesco");
+        Banco santander2 = new Banco("Santander");
 
         Cliente tete = new Cliente("Tete");
         Conta cc1 = new ContaCorrente(tete, santander);
@@ -24,6 +25,9 @@ public class Main {
 
         cc1.imprimirExtrato();
         cc2.imprimirExtrato();
+
+        System.out.println(santander.toString());
+        System.out.println(santander2.toString());
 
         /*
             Ideias de melhoria:

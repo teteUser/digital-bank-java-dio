@@ -23,4 +23,11 @@ public class Banco {
         this.nome = nome;
     }
 
+    @Override
+    public String toString() {
+        return "Banco{" +
+                "nome='" + nome + '\'' +
+                ", contas=" + contas +
+                '}';
+    }
 }
