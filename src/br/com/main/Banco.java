@@ -1,7 +1,6 @@
 package br.com.main;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 
 /**
  *
@@ -9,7 +8,7 @@ import java.util.List;
  */
 public class Banco {
     private String nome;
-    public List<Conta> contas = new ArrayList();
+    public Set<Conta> contas = new HashSet<>();
 
     public Banco(String nome) {
         this.nome = nome;
