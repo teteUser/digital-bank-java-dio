@@ -26,9 +26,10 @@ public class Main {
         cc1.imprimirExtrato();
         cc2.imprimirExtrato();
 
-        System.out.println(santander.toString());
-        System.out.println(santander2.toString());
 
+
+
+        System.out.println("Set de Bancos: " + santander.bancos);
         /*
             TO DO:
             - Não permitir instâncias de banco com o mesmo nome.

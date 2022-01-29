@@ -1,9 +1,6 @@
 package br.com.main;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  *
@@ -27,11 +24,4 @@ public class Banco {
         this.nome = nome;
     }
 
-    @Override
-    public String toString() {
-        return "Banco{" +
-                "nome='" + nome + '\'' +
-                ", contas=" + contas +
-                '}';
-    }
 }
