@@ -1,6 +1,8 @@
 package br.com.main;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -9,10 +11,12 @@ import java.util.Set;
  */
 public class Banco {
     private String nome;
-    public Set<Conta> contas = new HashSet<>();
+    public List<Conta> contas = new ArrayList<>();
+    public Set<Banco> bancos = new HashSet<>();
 
     public Banco(String nome) {
         this.nome = nome;
+        this.bancos.add(this);
     }
 
     public String getNome() {

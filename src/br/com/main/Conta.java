@@ -42,7 +42,8 @@ public abstract class Conta implements InterfaceConta {
         this.agencia = AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
         this.cliente = cliente;
-        this.banco = banco;;
+        this.banco = banco;
+        this.banco.contas.add(this);
     }
             
     protected int getAgencia() {
