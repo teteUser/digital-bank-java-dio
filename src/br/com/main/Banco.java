@@ -13,6 +13,12 @@ public class Banco {
 
     public Banco(String nome) {
         this.nome = nome;
+        boolean rep = false;
+        Iterator<Set> it = bancos.iterator();
+        while(it.hasNext()){
+            Set<Banco> b = new HashSet<>();
+            b = it.next();
+        }
         this.bancos.add(this);
     }
 
