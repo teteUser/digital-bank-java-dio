@@ -17,8 +17,6 @@ public class Main {
         Conta cc2 = new ContaPoupanca(juca, bradesco);
         cc2.depositar(1800d);
 
-
-
         cc1.imprimirExtrato();
         cc2.imprimirExtrato();
 
@@ -26,7 +24,6 @@ public class Main {
 
         cc1.imprimirExtrato();
         cc2.imprimirExtrato();
-
 
         System.out.println("Lista de contas do Banco Santander: ");
         System.out.println("Set de Bancos: " + santander.bancos);
