@@ -8,13 +8,10 @@ public class Main {
     public static void main(String[] args){
         Banco santander = new Banco("Santander");
         Banco bradesco = new Banco("Bradesco");
-        Banco santander2 = new Banco("Santander");
 
         Cliente tete = new Cliente("Tete");
         Conta cc1 = new ContaCorrente(tete, santander);
         cc1.depositar(1350d);
-        Conta cp1 = new ContaPoupanca(tete, santander2);
-        cp1.depositar(4500d);
 
         Cliente juca = new Cliente("Juca");
         Conta cc2 = new ContaPoupanca(juca, bradesco);
@@ -32,7 +29,7 @@ public class Main {
         cp1.imprimirExtrato();
 
 
-        System.out.println();
+        System.out.println("Lista de contas do Banco Santander: ");
         System.out.println("Set de Bancos: " + santander.bancos);
         /*
             Tarefas para o Tennison do futuro:
