@@ -24,4 +24,7 @@ public class Banco {
         this.nome = nome;
     }
 
+    public List<Conta> listaContas{
+        return contas;
+    }
 }
