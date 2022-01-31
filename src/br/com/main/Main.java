@@ -32,8 +32,7 @@ public class Main {
         cp1.imprimirExtrato();
 
 
-
-
+        System.out.println();
         System.out.println("Set de Bancos: " + santander.bancos);
         /*
             Tarefas para o Tennison do futuro:
