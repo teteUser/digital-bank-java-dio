@@ -21,9 +21,11 @@ public class Banco {
     }
 
     public List<Conta> getContas(){
-        return this.contas;
+        return contas;
     }
 
-
+    public Set<Banco> getBancos(){
+        return bancos;
+    }
    
 }

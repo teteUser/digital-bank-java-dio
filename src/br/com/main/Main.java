@@ -26,7 +26,7 @@ public class Main {
         cc2.imprimirExtrato();
 
         System.out.println("Lista de contas do Banco Santander: " + santander.getContas());
-        //System.out.println("Set de Bancos: " + santander.bancos);
+        System.out.println("Set de Bancos: " + santander.getBancos());
 
         /*
             Tarefas para o Tennison do futuro:
