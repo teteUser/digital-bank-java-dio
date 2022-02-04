@@ -33,7 +33,7 @@ public class Main {
 
             - Não permitir instâncias de banco com o mesmo nome.
 
-            - Ao instanciar uma nova conta, verificar qual foi o último número de conta daquele banco em específico
+            - Ao instanciar uma nova conta, verificar qual foi o último número de conta daquele banco específico
             e incrementar o número de conta apenas no grupo daquele banco.
          */
 
