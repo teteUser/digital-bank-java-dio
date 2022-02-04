@@ -8,8 +8,8 @@ import java.util.*;
  */
 public class Banco {
     private String nome;
-    public List<Conta> contas = new ArrayList<>();
-    public Set<Banco> bancos = new HashSet<>();
+    private List<Conta> contas = new ArrayList<>();
+    private Set<Banco> bancos = new HashSet<>();
 
     public Banco(String nome) {
         this.nome = nome;
@@ -27,4 +27,10 @@ public class Banco {
     public List<Conta> listaContas(){
         return contas;
     }
+    
+    public List<Conta> getContas(){
+        return this.contas;
+    }
+    
+   
 }
