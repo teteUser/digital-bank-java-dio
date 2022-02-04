@@ -25,7 +25,7 @@ public class Main {
         cc1.imprimirExtrato();
         cc2.imprimirExtrato();
 
-        System.out.println("Lista de contas do Banco Santander: " + santander.listaContas().toString());
+        System.out.println("Lista de contas do Banco Santander: " + santander.getContas());
         //System.out.println("Set de Bancos: " + santander.bancos);
 
         /*

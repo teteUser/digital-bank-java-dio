@@ -20,17 +20,10 @@ public class Banco {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public List<Conta> listaContas(){
-        return contas;
-    }
-    
     public List<Conta> getContas(){
         return this.contas;
     }
-    
+
+
    
 }
